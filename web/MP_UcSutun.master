@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MP.master" AutoEventWireup="true" CodeFile="MP_UcSutun.master.cs" Inherits="MP_UcSutun" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MP_Content" runat="Server">
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar">
+                <asp:ContentPlaceHolder ID="CPH_Sol" runat="server">
+                </asp:ContentPlaceHolder>
+            </aside>
+        </div>
+        <div class="col-md-6">
+            <h2>
+                <asp:Literal ID="lblH2" runat="server" />
+            </h2>
+            <asp:ContentPlaceHolder ID="CPH_Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="col-md-3">
+            <aside class="sidebar">
+                <asp:ContentPlaceHolder ID="CPH_Sag" runat="server">
+                </asp:ContentPlaceHolder>
+            </aside>
+        </div>
+
+    </div>
+</asp:Content>
+

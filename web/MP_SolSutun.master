@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MP.master" AutoEventWireup="true" CodeFile="MP_SolSutun.master.cs" Inherits="MP_SolSutun" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MP_Content" runat="Server">
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar">
+                <asp:ContentPlaceHolder ID="CPH_Sol" runat="server">
+                </asp:ContentPlaceHolder>
+            </aside>
+        </div>
+        <div class="col-md-9">
+            <h2>
+                    <asp:Literal ID="lblH2" runat="server"/>
+                </h2>
+            <asp:ContentPlaceHolder ID="CPH_Sag" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
+

@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MP.master" AutoEventWireup="true" CodeFile="MP_TekSutun.master.cs" Inherits="MP_TekSutun" %>
+
+<%-- İçerik denetimlerini buraya ekleyin --%>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MP_Content" runat="server">
+    <div class="row">
+        <div class="col">
+            <h2>
+                    <asp:Literal ID="lblH2" runat="server"/>
+                </h2>
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
